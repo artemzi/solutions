@@ -1,7 +1,7 @@
 package epi;
 
 public class StringUtils {
-    static String reverseWithXOR(String line) {
+    private static String reverseWithXOR(String line) {
         char[] lineChars = line.toCharArray();
         int length = line.length();
         int half = length / 2;
@@ -13,7 +13,7 @@ public class StringUtils {
         return String.valueOf(lineChars);
     }
 
-    static String reverseWithVar(String line) {
+    private static String reverseWithVar(String line) {
         char[] lineChars = line.toCharArray();
         int length = lineChars.length;
         int half = length / 2;
